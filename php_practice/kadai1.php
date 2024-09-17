@@ -34,5 +34,4 @@ $a2018_calendar = [
 ];
 echo $a2018_calendar["December"];
 
-  $total = 0;
-  echo $total;
+  
