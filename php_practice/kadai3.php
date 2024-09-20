@@ -27,6 +27,8 @@ echo array_product(array(1, 3, 5 ,7, 9));
 
 echo "\n";
 
+
+//3．やり直し
 function array_kakezan($arr){
   $first = $arr[0];
 
