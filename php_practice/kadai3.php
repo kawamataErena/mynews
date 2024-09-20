@@ -22,6 +22,11 @@ echo sum(5,5);
 echo "\n";
 //3.$arr という配列の仮引数を持ち、数値が入った配列array(1, 3, 5 ,7, 9) を渡すとその要素をすべてかけた結果を返す関数を作成してください
  
+$arr = array(1, 3, 5 ,7, 9);
+echo array_product(array(1, 3, 5 ,7, 9));
+
+echo "\n";
+
 function array_kakezan($arr){
   $first = $arr[0];
 
