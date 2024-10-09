@@ -39,7 +39,7 @@
                         <ul class="navbar-nav">
                             <!-- Authentication Links -->
                             @guest
-                                <li a class="nav-link" href="{{ route('login') }}">{{ __('messages.login') }}</a></li>
+                                <li> <a class="nav-link" href="{{ route('login') }}">{{ __('messages.login') }}</a></li>
                             
                             @else
                                 <li class="nav-item dropdown">
