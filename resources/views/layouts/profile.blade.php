@@ -37,13 +37,15 @@
                         </ul>
                         
                         <ul class="navbar-nav">
+                        {{-- 以下を追記 --}}
                             <!-- Authentication Links -->
+                            {{-- ログインしていなかったらログイン画面へのリンクを表示 --}}
                             @guest
-                                <li> <a class="nav-link" href="{{ route('login') }}">{{ __('messages.login') }}</a></li>
-                            
+                                <li><a class="nav-link" href="{{ route('login') }}">{{ __('messages.login') }}</a></li>
+                            {{-- ログインしていたらユーザー名とログアウトボタンを表示 --}}
                             @else
                                 <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" date-bs-toggle="dropdown" aria-expanded="false">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                         {{ Auth::user()->name }} <span class="caret"></span>
                                     </a>
 
@@ -57,6 +59,7 @@
                                     </div>
                                 </li>
                             @endguest
+                            {{-- 以上までを追記 --}}
                         </ul>
 
                         </ul>
