@@ -49,7 +49,7 @@
                     </div>
                 </form>
                 <div class="row mt-5">
-                <div class="col-md-4 mx-auto">
+                    <div class="col-md-4 mx-auto">
                         <h2>編集履歴</h2>
                         <ul class="list-group">
                             @if ($news_form->histories != null)

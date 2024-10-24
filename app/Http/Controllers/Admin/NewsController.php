@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 
 // 以下の1行を追記することで、News Modelが扱えるようになる
 use App\Models\News;
+
 // 以下の2行を追記することで、History Model, Carbonクラスが扱えるようになる
 use App\Models\History;
 use Carbon\Carbon;
@@ -53,7 +54,7 @@ class NewsController extends Controller
       public function index(Request $request)
       {
           $cond_title = $request->cond_title;
-          if ($cond_title != null) {
+          if ($cond_title != '') {
               // 検索されたら検索結果を取得する
               $posts = News::where('title', $cond_title)->get();
           } else {
@@ -116,6 +117,7 @@ class NewsController extends Controller
 
         return redirect('admin/news/');
     }
+
     
       
 }
