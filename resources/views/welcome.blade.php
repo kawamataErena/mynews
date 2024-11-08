@@ -17,8 +17,10 @@
         <style>
             body {
                 font-family: 'Nunito', sans-serif;
-            }
+            
             <p>こんにちは！</p>
+
+            }
         </style>
     </head>
     <body class="antialiased">
